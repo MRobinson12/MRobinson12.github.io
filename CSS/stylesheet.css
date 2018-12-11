@@ -96,7 +96,11 @@ nav ul li a
             margin-bottom: 7em;
             list-style-type: none;  
         }
-
+#AlbumPage ul
+        {
+            background-color: bisque;
+            border: black;
+        }
 #AlbumPage ul li img
         {
             width: 2em;
