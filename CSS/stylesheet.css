@@ -73,13 +73,24 @@ nav ul li a
             margin-bottom: 2em;
             
         }
+#AlbumTitle h1
+        {
+            text-align: center;
+            text-decoration: underline;
+            display: block;
+            font-size: 2em;
+            margin-bottom: 2em;
+        }
+#AlbumPage
+        {
+            display: block;
+        }
 #AlbumPage img 
         {
             width: 25em;
             height: 25em;
             margin-left: 25%;
-            margin-right: 10%;
-            margin-bottom: 10em;
+            margin-right: 10%;            
             float: left;
             display: block
         }
@@ -98,8 +109,12 @@ nav ul li a
         }
 #AlbumPage ul li
         {
-            background-color: bisque;
-            border: black;
+            display: block;
+            color: cornsilk;
+            font-size: 1em;
+            border-right: 3em;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
         }
 #AlbumPage ul li img
         {
@@ -107,6 +122,21 @@ nav ul li a
             height: 2em;
             margin: 0;
             padding-right: 1em;
+            display: table;
+            background: bisque;
+            padding: 0.5em;
+        }
+#spacer h1
+        {
+            display: none;
+        }
+#BackButton a
+        {
+            text-align: center;
+            text-decoration: underline;
+            display: inline-block;
+            font-size: 2em;
+            margin-bottom: 2em;
         }
 #about img
         {
@@ -114,6 +144,7 @@ nav ul li a
             width: 30%;
             height: 30%;
             margin-right: 5%;
+            margin-bottom: 2em;
         }
 #about h1
         {
