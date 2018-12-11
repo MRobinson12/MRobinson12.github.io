@@ -96,7 +96,7 @@ nav ul li a
             margin-bottom: 7em;
             list-style-type: none;  
         }
-#AlbumPage ul
+#AlbumPage ul li
         {
             background-color: bisque;
             border: black;
