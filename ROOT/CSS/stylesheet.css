@@ -1,0 +1,252 @@
+*   {  
+        margin: 0;
+        padding: 0;
+    }
+body    {
+           background-color: #37393d;
+           height: 100%;
+                
+}
+h1 {color: snow}
+p {color: snow}
+nav     {
+            margin: 0px;
+            padding: 0px;            
+        }
+nav ul 
+        {
+            list-style-type: none;
+            color: snow;
+            background: black;
+            align-items: right;
+            margin-bottom: 5em;
+            vertical-align: baseline;
+            padding: 1em
+        }
+nav ul li
+        {
+            display: inline;
+            padding: 1em;
+            background: darkslategray;
+            align-items: right;
+            
+        }
+nav ul li a
+        {
+            text-decoration: none;
+            color: snow;
+            font-size: 1.2em;         
+            font-family: 'Arial', sans-serif;   
+        }
+#cdAd
+        {
+            text-align: center;
+            display: block;
+            font-size: 2em;
+            margin-bottom: 2em;
+        }
+#cdAd a {
+            color: black
+        }
+#album  {
+            margin-bottom: 11.5em;
+            display: block;
+            
+        }
+#album ul 
+        {
+            list-style-type: none;
+            margin: 0px;
+            display: inline;
+            background: #37393d
+        } 
+#album ul li 
+        {
+            display: inline;
+            padding: 6em;
+        }       
+#album ul li img
+        {
+            width: 15em;
+            margin-bottom: 2em;
+            
+        }
+#AlbumPage img 
+        {
+            width: 25em;
+            height: 25em;
+            margin-left: 25%;
+            margin-right: 10%;
+            margin-bottom: 10em;
+            float: left;
+            display: block
+        }
+#AlbumPage h1
+        {
+            
+            margin-left: 5em;  
+            text-decoration: underline;
+            margin-bottom: 1em;
+        }
+#AlbumPage ul
+        {
+            display: block;
+            margin-bottom: 7em;
+            list-style-type: none;  
+        }
+
+#AlbumPage ul li img
+        {
+            width: 2em;
+            height: 2em;
+            margin: 0;
+            padding-right: 1em;
+        }
+#about img
+        {
+            float: right;
+            width: 30%;
+            height: 30%;
+            margin-right: 5%;
+        }
+#about h1
+        {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            size: 3em;
+            text-decoration: underline;
+            margin-bottom: 1.2em;
+        }
+#about h2
+        {
+            font-family: 'Helvetica';
+            font-size: 1em;   
+            color: darkgrey;
+            margin-bottom: 1.2em;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+Footer
+        {
+            background: goldenrod;
+            display: block;
+            margin-top: 3em;
+            width: 100%;
+            bottom: 0;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+Footer ul 
+        {
+            list-style-type: none;
+            display: block;
+            bottom: 0;
+            background: goldenrod;
+            
+        } 
+Footer ul li 
+        {
+            display: inline-block;
+            bottom: 0;
+            padding: 1em;
+        }       
+    
+
+@media (max-width:600px)
+{
+
+        body    {
+                   background-color: #37393d;
+                   height: 100%;
+                        
+        }
+        h1 {color: snow}
+        p {color: snow}
+        nav     {
+                    margin: 0px;
+                    padding: 0px;            
+                }
+        nav ul 
+                {
+                    list-style-type: none;
+                    color: snow;
+                    background: black;
+                    align-items: right;
+                    margin-bottom: 5em;
+                    vertical-align: baseline;
+                    padding: 1em
+                }
+        nav ul li
+                {
+                    display: inline;
+                    padding: 1em;
+                    background: darkslategray;
+                    align-items: right;
+                    
+                }
+        nav ul li a
+                {
+                    text-decoration: none;
+                    color: snow;
+                    font-size: 1.2em;         
+                    font-family: 'Arial', sans-serif;   
+                }
+        #cdAd
+                {
+                    text-align: center;
+                    display: block;
+                    font-size: 2em;
+                    margin-bottom: 2em;
+                }
+        #cdAd a {
+                    color: black
+                }
+        #album  {
+                    margin-bottom: 11.5em;
+                    display: block;
+                    
+                }
+        #album ul 
+                {
+                    list-style-type: none;
+                    margin: 0px;
+                    display: inline;
+                    background: #37393d
+                } 
+        #album ul li 
+                {
+                    display: inline;
+                    padding: 6em;
+                }       
+        #album ul li img
+                {
+                    width: 75vw;
+                    margin-bottom: 2em;
+                    
+                }
+        Footer
+                {
+                    background: goldenrod;
+                    display: block;
+                    margin-top: 3em;
+                    width: 100%;
+                    bottom: 0;
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                }
+        Footer ul 
+                {
+                    list-style-type: none;
+                    display: block;
+                    bottom: 0;
+                    background: goldenrod;
+                    
+                } 
+        Footer ul li 
+                {
+                    display: inline-block;
+                    bottom: 0;
+                    padding: 1em;
+                }       
+        
+        }
