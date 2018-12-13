@@ -23,7 +23,7 @@ nav ul
             align-items: right;
             margin-bottom: 5em;
             vertical-align: baseline;
-            padding: 1em
+            padding: 1em;
         }
 nav ul li
         {
@@ -48,12 +48,22 @@ nav ul li a
             margin-bottom: 2em;
         }
 #cdAd a {
-            color: black
+            background-color: goldenrod;
+            border-radius: 1em; 
+            color: snow;
+            text-decoration: none;
+            font-family: 'Arial', sans-serif; 
         }
 #album  {
             margin-bottom: 11.5em;
-            display: block;
-            
+            display: block;            
+        }
+#album h1 
+        {
+            text-decoration: underline;
+            color: snow;
+            margin-bottom: 2em;
+            font-family: 'Arial', sans-serif; 
         }
 #album ul 
         {
@@ -80,6 +90,26 @@ nav ul li a
             display: block;
             font-size: 2em;
             margin-bottom: 2em;
+            font-family: 'Arial', sans-serif; 
+        }
+.NewsArticle
+        {
+            margin-bottom: 1em;
+        }
+.NewsArticle h1
+        {
+            font-size: 2em;
+            font-family: 'Arial', sans-serif; 
+        }   
+.NewsArticle p
+        {
+            font-size: 0.9em;
+            font-family: 'Arial', sans-serif; 
+        }
+.NewsArticle img
+        {
+            width: 5em;
+            height: 5em;
         }
 #AlbumPage
         {
@@ -100,6 +130,7 @@ nav ul li a
             margin-left: 5em;  
             text-decoration: underline;
             margin-bottom: 1em;
+            font-family: 'Arial', sans-serif; 
         }
 #AlbumPage ul
         {
@@ -125,10 +156,6 @@ nav ul li a
             display: table;
             background: bisque;
             padding: 0.5em;
-        }
-#spacer h1
-        {
-            display: none;
         }
 #BackButton a
         {
@@ -188,6 +215,9 @@ Footer ul li
             padding: 1em;
         }       
     }    
+
+
+
 
 @media only screen and (max-width:600px)
 {
@@ -276,7 +306,7 @@ Footer ul li
                     list-style-type: none;
                     display: block;
                     bottom: 0;
-                    background: goldenrod;
+                    background: white;
                     
                 } 
         Footer ul li 
