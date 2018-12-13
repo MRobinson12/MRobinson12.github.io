@@ -227,7 +227,7 @@ Footer ul li
 
 
 
-@media screen and (min-width: 360px) and (max-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+@media (-webkit-device-pixel-ratio: 3) {
 
         body    {
                    background-color: #37393d;
