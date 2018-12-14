@@ -54,23 +54,26 @@ nav ul li a
             display: block;
             font-size: 2em;
             margin-bottom: 2em;
+            border: 2em;
         }
 #cdAd a {
             background-color: goldenrod;
-            border-radius: 1em; 
+            padding: 1em;
+            border-radius: 2em; 
             color: snow;
             text-decoration: none;
             font-family: 'Arial', sans-serif; 
         }
 #album  {
-            margin-bottom: 11.5em;
+            padding-bottom: 5.3em;
             display: block;            
         }
 #album h1 
         {
+            text-align: center;
             text-decoration: underline;
             color: snow;
-            margin-bottom: 2em;
+            margin-bottom: 1em;
             font-family: 'Arial', sans-serif; 
         }
 #album ul 
@@ -130,7 +133,8 @@ nav ul li a
             margin-left: 25%;
             margin-right: 10%;            
             float: left;
-            display: block
+            display: block;
+            padding-bottom: 18.9em;
         }
 #AlbumPage h1
         {
@@ -146,14 +150,20 @@ nav ul li a
             margin-bottom: 7em;
             list-style-type: none;  
         }
-#AlbumPage ul li
+#AlbumPage #SongList
+        {
+            display: block;
+            margin-bottom: 7em;
+            list-style-type: disc;
+        }
+#AlbumPage #SongList li
         {
             display: block;
             color: cornsilk;
             font-size: 1em;
+            list-style-type: disc;
             border-right: 3em;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
         }
 #AlbumPage ul li img
         {
@@ -164,6 +174,7 @@ nav ul li a
             display: table;
             background: bisque;
             padding: 0.5em;
+            
         }
 #BackButton a
         {
@@ -180,6 +191,7 @@ nav ul li a
             height: 30%;
             margin-right: 5%;
             margin-bottom: 2em;
+           
         }
 #about h1
         {
@@ -197,6 +209,7 @@ nav ul li a
             margin-bottom: 1.2em;
             margin-left: 5%;
             margin-right: 5%;
+            
         }
 Footer
         {
@@ -204,6 +217,7 @@ Footer
             display: block;
             margin-top: 3em;
             width: 100%;
+            position: fixed;
             bottom: 0;
             margin-bottom: 0;
             padding-bottom: 0;
@@ -229,98 +243,98 @@ Footer ul li
 
 @media (-webkit-device-pixel-ratio: 3) {
 
-        body    {
-                   background-color: #37393d;
-                   height: 100%;
-                        
+body    {
+           background-color: #37393d;
+           height: 100%;                        
         }
-        h1 {color: snow}
-        p {color: snow}
-        nav     {
-                    margin: 0px;
-                    padding: 0px;            
-                }
-        nav ul 
-                {
-                    list-style-type: none;
-                    color: snow;
-                    background: black;
-                    align-items: right;
-                    margin-bottom: 5em;
-                    vertical-align: baseline;
-                    padding: 1em
-                }
-        nav ul li
-                {
-                    display: inline;
-                    padding: 1em;
-                    background: darkslategray;
-                    align-items: right;
-                    
-                }
-        nav ul li a
-                {
-                    text-decoration: none;
-                    color: snow;
-                    font-size: 1.2em;         
-                    font-family: 'Arial', sans-serif;   
-                }
-        #cdAd
-                {
-                    text-align: center;
-                    display: block;
-                    font-size: 2em;
-                    margin-bottom: 2em;
-                }
-        #cdAd a {
-                    color: black
-                }
-        #album  {
-                    margin-bottom: 11.5em;
-                    display: block;
-                    
-                }
-        #album ul 
-                {
-                    list-style-type: none;
-                    margin: 0px;
-                    display: inline;
-                    background: #37393d
-                } 
-        #album ul li 
-                {
-                    display: inline;
-                    padding: 6em;
-                }       
-        #album ul li img
-                {
-                    width: 75vw;
-                    margin-bottom: 2em;
-                    
-                }
-        Footer
-                {
-                    background:white;
-                    display: block;
-                    margin-top: 3em;
-                    width: 100%;
-                    bottom: 0;
-                    margin-bottom: 0;
-                    padding-bottom: 0;
-                }
-        Footer ul 
-                {
-                    list-style-type: none;
-                    display: block;
-                    bottom: 0;
-                    background: white;
-                    
-                } 
-        Footer ul li 
-                {
-                    display: inline-block;
-                    bottom: 0;
-                    padding: 1em;
-                }       
+h1 {color: snow}
+p {color: snow}
+nav     {
+           margin: 0px;
+           padding: 0px;            
+        }
+nav ul 
+        {
+            list-style-type: none;
+            color: snow;
+            background: black;
+            align-items: right;
+            margin-bottom: 5em;
+            vertical-align: baseline;
+            padding: 1em
+        }
+nav ul li
+        {
+            display: inline;
+            padding: 1em;
+            background: darkslategray;
+            align-items: right;
+            
+        }
+nav ul li a
+        {
+    text-decoration: none;
+            color: snow;
+            font-size: 2.1em;         
+            font-family: 'Arial', sans-serif;   
+        }
+#cdAd
+        {
+            text-align: center;
+            display: block;
+            font-size: 2em;
+            margin-bottom: 2em;
+        }
+#cdAd a {
+            color: black
+        }
+#album  {
+            margin-bottom: 11.5em;
+            display: block;
+            
+        }
+#album ul 
+        {
+            list-style-type: none;
+            margin: 0px;
+            display: inline;
+            background: #37393d
+        } 
+#album ul li 
+        {
+            display: inline;
+            padding: 6em;
+        }       
+#album ul li img
+        {
+            width: 75vw;
+            margin-bottom: 2em;
         
         }
+Footer
+        {
+            background: goldenrod;
+            display: block;
+            margin-top: 3em;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+Footer ul 
+        {
+            list-style-type: none;
+            display: block;
+            bottom: 0;
+            background: white;
+            
+        } 
+Footer ul li 
+        {
+            display: inline-block;
+            bottom: 0;
+            padding: 1em;
+        }       
+
+}
