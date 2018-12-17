@@ -1,5 +1,5 @@
 @media only screen and (min-width:600px) {
-
+        /*Homepage and Basic Elements*/
 *       
         {  
            margin: 0;
@@ -103,6 +103,8 @@ nav ul li a
             margin-bottom: 2em;
             font-family: 'Arial', sans-serif; 
         }
+
+/*News page*/
 .NewsArticle
         {
             margin-bottom: 1em;
@@ -122,6 +124,29 @@ nav ul li a
             width: 5em;
             height: 5em;
         }
+
+/*CD Creation Page*/
+#CustomCD #CustomAlbumCover
+        {
+                float: left
+        }
+
+#CustomCD #SongList
+        {
+                float: right;
+                list-style-type: none;
+                margin-right: 20%
+        }
+#CustomCD #SongList li
+        {
+                width: 2em;
+                list-style-type: none;                
+        }
+#CustomCD #SongList li .selected
+        {
+                background-color: lightblue;
+        }
+/*Album page*/
 #AlbumPage
         {
             display: block;
@@ -184,6 +209,9 @@ nav ul li a
             font-size: 2em;
             margin-bottom: 2em;
         }
+
+/*About Page*/
+
 #about img
         {
             float: right;
