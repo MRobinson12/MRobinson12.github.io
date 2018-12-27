@@ -92,13 +92,25 @@ nav ul li a
         {
             width: 15em;
             margin-bottom: 2em;
-            
+            box-shadow: 10px 10px grey; 
+              /* For Safari 3.1 to 6.0 */
+            -webkit-transition-property: width;
+            -webkit-transition-duration: 0.3s;
+            -webkit-transition-timing-function: linear;
+
+            /* Standard syntax */
+            transition-property: width;
+            transition-duration: 0.3s;
+            transition-timing-function: linear;
+
         }
 #album ul li .highlighted
         {
-        width: 30em;
-        margin-bottom: 2em;
-        display: inline-block;
+            width: 20em;
+            margin-bottom: 2em;
+            display: inline-block;
+            box-shadow: 5px 5px grey; 
+
         }
         
 #AlbumTitle h1
@@ -183,6 +195,7 @@ nav ul li a
             float: left;
             display: block;
             padding-bottom: 18.9em;
+            
         }
 #AlbumPage h1
         {
@@ -223,6 +236,7 @@ nav ul li a
             background: bisque;
             padding: 0.5em;
             
+            
         }
 #BackButton a
         {
@@ -242,7 +256,7 @@ nav ul li a
             height: 30%;
             margin-right: 5%;
             margin-bottom: 2em;
-           
+            box-shadow: 10px 10px grey; 
         }
 #about h1
         {
