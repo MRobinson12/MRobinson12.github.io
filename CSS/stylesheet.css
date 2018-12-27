@@ -94,6 +94,13 @@ nav ul li a
             margin-bottom: 2em;
             
         }
+#album ul li .highlighted
+        {
+        width: 30em;
+        margin-bottom: 2em;
+        display: inline-block;
+        }
+        
 #AlbumTitle h1
         {
             text-align: center;
@@ -107,22 +114,38 @@ nav ul li a
 /*News page*/
 .NewsArticle
         {
+            padding-bottom: 2em;
             margin-bottom: 1em;
+            margin-right: 5em;
+            display: inline-block;
         }
 .NewsArticle h1
         {
-            font-size: 2em;
+            margin-left: 2em;
+            font-size: 3em;
             font-family: 'Arial', sans-serif; 
+            display: block;     
+        }   
+.NewsArticle h2
+        {
+            font-size: 3em;
+            font-family: 'Arial', sans-serif; 
+            display: block;
         }   
 .NewsArticle p
         {
-            font-size: 0.9em;
+            font-size: 2em;
+            padding-left: 2em;
             font-family: 'Arial', sans-serif; 
+            display: block;
         }
 .NewsArticle img
         {
-            width: 5em;
-            height: 5em;
+            width: 15em;
+            height: 15em;
+            padding: 2em;
+            float: left;
+            display: block;
         }
 
 /*CD Creation Page*/
