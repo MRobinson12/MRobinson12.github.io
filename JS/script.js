@@ -11,6 +11,7 @@ $('.songbutton').click(function()
     slotselection =  $(this).attr('id');
 });
 
+//Changes album cover when highlighted
 $('.albumcover').mouseover(function()
 {
     $('.albumcover').removeClass('highlighted');
@@ -18,7 +19,22 @@ $('.albumcover').mouseover(function()
     console.log($(this).attr('id') +" has been highlighted");
     slotselection =  $(this).attr('id');
 });
+
 $('.albumcover').mouseout(function()
     {
     $('.albumcover').removeClass('highlighted');    
+    });
+
+//Changes Nav button when highlighted
+$('.navbutton').mouseover(function()
+{
+    $('.navbutton').removeClass('selected');
+    $(this).addClass('selected');
+    console.log($(this).attr('id') +" has been highlighted");
+    slotselection =  $(this).attr('id');
+});
+
+$('.navbutton').mouseout(function()
+    {
+    $('.navbutton').removeClass('selected');    
     });
