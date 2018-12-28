@@ -4,7 +4,15 @@
         {  
            margin: 0;
            padding: 0;
-        }   
+        }
+
+#pagetitle h1
+        {
+           text-align: center; 
+           font-family: 'Arial', sans-serif; 
+           text-decoration: underline;
+           margin-bottom: 1em;
+        }
 body   
         {
            background-color: #37393d;
@@ -134,29 +142,30 @@ nav ul li a
         }
 .NewsArticle h1
         {
-            margin-left: 2em;
+            margin-left: 10%;
             font-size: 3em;
             font-family: 'Arial', sans-serif; 
             display: block;     
         }   
 .NewsArticle h2
         {
-            font-size: 3em;
+            margin-left: 10%;
+            font-size: 2.5em;
             font-family: 'Arial', sans-serif; 
             display: block;
         }   
 .NewsArticle p
         {
-            font-size: 2em;
+            font-size: 1.2em;
             padding-left: 2em;
             font-family: 'Arial', sans-serif; 
             display: block;
         }
 .NewsArticle img
         {
-            width: 15em;
-            height: 15em;
-            padding: 2em;
+            width: 25em; 
+            padding-left: 9%;           
+            padding-right: 2em;
             float: left;
             display: block;
         }
@@ -306,6 +315,42 @@ Footer ul li
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 @media (-webkit-device-pixel-ratio: 3) {
 
