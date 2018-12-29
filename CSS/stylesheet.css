@@ -137,7 +137,7 @@ nav ul li a
         {
             padding-bottom: 2em;
             margin-bottom: 1em;
-            margin-right: 5em;
+            margin-right: 10%;
             display: inline-block;
         }
 .NewsArticle h1
@@ -173,24 +173,37 @@ nav ul li a
 /*CD Creation Page*/
 #CustomCD #CustomAlbumCover
         {
-                float: left
+                padding-left: 15%;
+                padding-right: 10%;
+                display: block;    
+                float: left;
+                width: 25em;
         }
-
 #CustomCD #SongList
         {
-                float: right;
                 list-style-type: none;
-                margin-right: 20%
+                float: left;
+                padding-right: 10%                    
         }
 #CustomCD #SongList li
         {
-                width: 2em;
-                list-style-type: none;                
+                list-style-type: none;                  
+        }
+#CustomCD #SongList li h1
+        {
+                font-size: 1.5em;
+                font-family: 'Arial', sans-serif; 
+                margin-bottom: 0.5em;
         }
 #CustomCD #SongList li .selected
         {
-                background-color: lightblue;
+                background-color: lightblue;    
         }
+#CustomCD #SongList li .songbutton
+        {
+                width: 20em;     
+        }
+
 /*Album page*/
 #AlbumPage
         {
