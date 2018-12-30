@@ -345,7 +345,7 @@ Footer ul li
 
 
 
-    
+
 
 /* CS MARKUP FOR MOBILE DEVICES*/
 @media (-webkit-device-pixel-ratio: 3) {
@@ -468,7 +468,6 @@ nav ul li a
         {
             padding-bottom: 2em;
             margin-bottom: 1em;
-            margin-right: 10%;
             display: inline-block;
         }
 .NewsArticle h1
@@ -480,7 +479,6 @@ nav ul li a
         }   
 .NewsArticle h2
         {
-            margin-left: 10%;
             font-size: 2.5em;
             font-family: 'Arial', sans-serif; 
             display: block;
@@ -488,14 +486,12 @@ nav ul li a
 .NewsArticle p
         {
             font-size: 1.2em;
-            padding-left: 2em;
             font-family: 'Arial', sans-serif; 
             display: block;
         }
 .NewsArticle img
         {
-            width: 25em; 
-            padding-left: 9%;           
+            width: 65%;        
             padding-right: 2em;
             float: left;
             display: block;
@@ -504,16 +500,13 @@ nav ul li a
 /*CD Creation Page*/
 #CustomCD #CustomAlbumCover
         {
-                padding-left: 25%;
-                padding-right: 10%;
                 display: block;    
-                float: left;
-                width: 25em;
+                align-content: center;
+                width: 65%;
         }
 #CustomCD #SongList
         {
                 list-style-type: none;
-                float: left;
                 padding-right: 10%                    
         }
 #CustomCD #SongList li
@@ -532,7 +525,7 @@ nav ul li a
         }
 #CustomCD #SongList li .songbutton
         {
-                width: 20em;     
+                width: 65%;     
         }
 
 /*Album page*/
@@ -542,19 +535,12 @@ nav ul li a
         }
 #AlbumPage img 
         {
-            width: 25em;
-            height: 25em;
-            margin-left: 25%;
-            margin-right: 10%;            
-            float: left;
+            width: 65%;       
             display: block;
-            padding-bottom: 18.9em;
-            
+            padding-bottom: 3em;            
         }
 #AlbumPage h1
-        {
-            
-            margin-left: 5em;  
+        { 
             text-decoration: underline;
             margin-bottom: 1em;
             font-family: 'Arial', sans-serif; 
