@@ -1,6 +1,28 @@
-window.onload=function(){console.log("Ready")};
-
+//CD creator variables
+var albumselector;
+var song1;
+var song2;
+var song3;
+var song4;
+var song5;
+var song6;
+var song7;
+var song8;
+var song9;
+var song10;     
+var albumcover = ["Assets/album1.jpg", "Assets/album2.jpg", "Assets/album3.jpg", "Assets/album4.jpg", "Assets/album5.jpg", "Assets/album6.jpg", "Assets/album7.jpg", "Assets/album8.jpg"]
 var slotselection = null;
+
+//onload functions
+window.onload=function()
+    {
+    albumselector = 0;
+    console.log("Ready")
+    savedalbumselector = localStorage.getItem("savedcover");
+    albumselector = savedalbumselector;
+    $('#CustomAlbumCover').attr('src',albumcover[savedalbumselector]);
+    };
+
 
 //Selects the song slot to change
 $('.songbutton').click(function()
@@ -39,10 +61,6 @@ $('.navbutton').mouseout(function()
     $('.navbutton').removeClass('selected');    
     });
 
-//CD creator variables
-var albumselector = 0;
-var albumcover = ["Assets/album1.jpg", "Assets/album2.jpg", "Assets/album3.jpg", "Assets/album4.jpg", "Assets/album5.jpg", "Assets/album6.jpg", "Assets/album7.jpg", "Assets/album8.jpg"]
-
 //Changes the CD cover image
 $('#nextcover').click(function()
     {
@@ -50,11 +68,13 @@ $('#nextcover').click(function()
     {
         albumselector = 0;
         $('#CustomAlbumCover').attr('src',albumcover[albumselector]);
+        console.log("Selector is at" + albumselector);
     }
     else
     {
         albumselector = albumselector + 1;
         $('#CustomAlbumCover').attr('src',albumcover[albumselector]);
+        console.log("Selector is at" + albumselector);
     }
 });
 $('#prevcover').click(function()
@@ -63,12 +83,20 @@ $('#prevcover').click(function()
     {
         albumselector = 7;
         $('#CustomAlbumCover').attr('src',albumcover[albumselector]);
+        console.log("Selector is at" + albumselector);
     }
     else
     {
         albumselector = albumselector - 1;
         $('#CustomAlbumCover').attr('src',albumcover[albumselector]);
+        console.log("Selector is at" + albumselector);
     }
 });
 
+//Saves user settings
+$('#savebutton').click(function()
+    {
+        localStorage.setItem("savedcover", null);
+        localStorage.setItem("savedcover", albumselector);
+    });
 

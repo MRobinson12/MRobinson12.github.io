@@ -328,25 +328,6 @@ Footer ul li
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* CS MARKUP FOR MOBILE DEVICES*/
 @media (-webkit-device-pixel-ratio: 3) {
 
@@ -404,7 +385,7 @@ nav ul li a
         {
             text-decoration: none;
             color: snow;
-            font-size: 1.2em;         
+            font-size: 4        em;         
             font-family: 'Arial', sans-serif;   
         }
 #cdAd
@@ -507,7 +488,7 @@ nav ul li a
 #CustomCD #SongList
         {
                 list-style-type: none;
-                padding-right: 10%                    
+                margin-right: 5%;                  
         }
 #CustomCD #SongList li
         {
@@ -556,6 +537,7 @@ nav ul li a
             display: block;
             margin-bottom: 7em;
             list-style-type: disc;
+            margin-right: 5%;    
         }
 #AlbumPage #SongList li
         {
@@ -569,7 +551,6 @@ nav ul li a
 #AlbumPage ul li img
         {
             width: 2em;
-            height: 2em;
             margin: 0;
             padding-right: 1em;
             display: table;
@@ -591,9 +572,7 @@ nav ul li a
 
 #about img
         {
-            float: right;
-            width: 30%;
-            height: 30%;
+            width: 75%;
             margin-right: 5%;
             margin-bottom: 2em;
             box-shadow: 10px 10px grey; 
@@ -602,7 +581,7 @@ nav ul li a
         {
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             text-align: center;
-            size: 3em;
+            size: 5em;
             text-decoration: underline;
             margin-bottom: 1.2em;
         }
