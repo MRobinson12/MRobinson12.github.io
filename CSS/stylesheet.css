@@ -1,4 +1,4 @@
-@media only screen {
+@media only screen and (min-width: 600px) {
         /*Homepage and Basic Elements*/
 *       
         {  
@@ -329,7 +329,7 @@ Footer ul li
 
 
 /* CS MARKUP FOR MOBILE DEVICES*/
-@media (-webkit-device-pixel-ratio: 3) {
+@media only screen and (max-width: 600px) {
 
 /*Homepage and Basic Elements*/
 *       
@@ -434,6 +434,13 @@ nav ul li a
             margin-bottom: 2em;
             box-shadow: 1em 1em 1em grey;            
         }
+#album ul li .highlighted
+        {
+            width: 65%;
+            margin-bottom: 2em;
+            box-shadow: 1em 1em 1em grey;       
+
+        }
 #AlbumTitle h1
         {
             text-align: center;
@@ -443,6 +450,7 @@ nav ul li a
             margin-bottom: 2em;
             font-family: 'Arial', sans-serif; 
         }
+
 
 /*News page*/
 .NewsArticle
