@@ -375,10 +375,8 @@ nav ul
 nav ul li
         {
             display: inline;
-            padding: 1em;
+            padding: 0.9em;
             background: darkslategray;
-
-            
         }
 nav ul li a
         {
