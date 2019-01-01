@@ -329,7 +329,7 @@ Footer ul li
 
 
 /* CS MARKUP FOR MOBILE DEVICES*/
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
 
 /*Homepage and Basic Elements*/
 *       
@@ -368,8 +368,7 @@ nav ul
             list-style-type: none;
             color: snow;
             background: black;
-            align-items: right;
-            margin-bottom: 5em;
+            margin-bottom: 2em;
             vertical-align: baseline;
             padding: 1em;
         }
@@ -378,14 +377,14 @@ nav ul li
             display: inline;
             padding: 1em;
             background: darkslategray;
-            align-items: right;
+
             
         }
 nav ul li a
         {
             text-decoration: none;
             color: snow;
-            font-size: 4        em;         
+            font-size: 1em;         
             font-family: 'Arial', sans-serif;   
         }
 #cdAd
@@ -393,16 +392,17 @@ nav ul li a
             text-align: center;
             display: block;
             font-size: 2em;
-            margin-bottom: 2em;
+            margin-bottom: 1em;
             border: 2em;
         }
 #cdAd a {
             background-color: goldenrod;
-            padding: 1em;
-            border-radius: 2em; 
+            padding: 0.3em;
+            border-radius: 1em;
             color: snow;
             text-decoration: none;
-            font-family: 'Arial', sans-serif; 
+            font-family: 'Arial', sans-serif;
+            font-size: 0.7em;
         }
 #album  {
             padding-bottom: 5.3em;
@@ -414,7 +414,8 @@ nav ul li a
             text-decoration: underline;
             color: snow;
             margin-bottom: 1em;
-            font-family: 'Arial', sans-serif; 
+            font-family: 'Arial', sans-serif;
+            font-size: 1.3em;
         }
 #album ul 
         {
@@ -426,7 +427,7 @@ nav ul li a
 #album ul li 
         {
             display: inline;
-            padding: 6em;
+            padding-left: 15%;
         }       
 #album ul li img
         {
@@ -626,6 +627,6 @@ Footer ul li
         {
             display: inline-block;
             bottom: 0;
-            padding: 1em;
+            padding-right: 0.41em;
         }       
     }    
