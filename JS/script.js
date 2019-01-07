@@ -11,6 +11,7 @@ var song8;
 var song9;
 var song10;     
 var albumcover = ["Assets/album1.jpg", "Assets/album2.jpg", "Assets/album3.jpg", "Assets/album4.jpg", "Assets/album5.jpg", "Assets/album6.jpg", "Assets/album7.jpg", "Assets/album8.jpg"]
+var songstorage =["Humility (feat. George Benson)","Tranz","Hollywood (feat. Snoop Dogg & Jamie Principle)","Kansas","Sorcererz","Idaho","Lake Zurich","Magic City","FireFlies","One Percent","Souk Eyes","Ascension","Strobelite","Saturnz Barz","Momentz","Submission","Charger","Adromeda","Busted and Blue","Carnival","Let Me Out","Sex Murder Party","She's My Collar","Hallelujah Money","We Got the Power","Interlude: New World","The Apprentice","Halfway to the Halfway House","Out of Body","Ticker Tape","Circle of Friendz","Orchestral Intro","Welcome to the World of the Plastic Beach","White Flag","Rhinestone Eyes","Style","Superfast Jellyfish","Empire Ants","Glitter Freeze","Some Kind of Nature","On Melancholy Hill","Broken","Plastic Beach","To Binge","Cloud of Unknowing","Pirate Jet","Phoner To Arizona","Revolving Doors","HillBilly Man","Detroit","Shy-town","Little Pink Plastic Bags","The Joplin Spider","The Parish of Space Dust","The Snake In Dallas","Amarillo","The Speak It Mountains","Aspen Forest","Bobby In Phoenix","California And the Slipping of the Sun","Seattle Yodel","68 State","People","Hongkongaton","We Are Happy Landfill","Hong Kong","Highway (Under Construction)","Rockit","Bill Murray","The Swagga","Murdoc Is God","Spitting Out The Demons","Don't Get Lost In Heaven","Stop The Damns","Intro","Last Living Souls","Kids With Guns","O Green World","Dirty Harry","Feel Good Inc.","El Manana","Every Planet We Reach Is Dead","November Has Come","All Alone","White Light","DARE","Fire Coming Out Of The Monkey's Head","Don't Get Lost In Heaven","Demon Days","Jungle Fresh","Strictly Rubbadub","Banana Baby","Monkey Racket","De-Punked","P45","Dub Ø9","Crooked","Mutant Genius","Come Again","A Fistful of Peanuts","Lil' Dub Chefin'","Re-Hash","5/4","Tomorrow Comes Today","New Genius (Brother)","Clint EastWood","Man Research","Punk","Sound Check","Double Bass","Rock the House","19-2000","Latin Simone","Starshine","Slow Country","M1 A1","Clint EastWood (Ed Case/Sweetie Irie Refix)","19-2000 - Soulchild Remix"]
 var slotselection = null;
 
 //onload functions
@@ -125,4 +126,5 @@ jQuery(document).ready(function(){
 $('.songselection').click(function()
 {
     console.log($(this).attr('id') +" was chosen");
+    $('.selected').attr('value',songstorage[$(this).attr('id')]);
 });
