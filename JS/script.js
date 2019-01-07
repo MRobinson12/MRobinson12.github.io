@@ -23,9 +23,17 @@ window.onload=function()
     savedalbumselector = localStorage.getItem('savedcover');
     albumselector = savedalbumselector;
     $('#CustomAlbumCover').attr('src',albumcover[savedalbumselector]);
-
-    $('#menu').metisMenu();
-
+ 
+    $('#Song1').attr('value',songstorage[localStorage.getItem('song1local')]);
+    $('#Song2').attr('value',songstorage[localStorage.getItem('song2local')]);
+    $('#Song3').attr('value',songstorage[localStorage.getItem('song3local')]);
+    $('#Song4').attr('value',songstorage[localStorage.getItem('song4local')]);
+    $('#Song5').attr('value',songstorage[localStorage.getItem('song5local')]);
+    $('#Song6').attr('value',songstorage[localStorage.getItem('song6local')]);
+    $('#Song7').attr('value',songstorage[localStorage.getItem('song7local')]);
+    $('#Song8').attr('value',songstorage[localStorage.getItem('song8local')]);
+    $('#Song9').attr('value',songstorage[localStorage.getItem('song9local')]);
+    $('#Song10').attr('value',songstorage[localStorage.getItem('song10local')]);
     };
 
 
@@ -101,8 +109,14 @@ $('#prevcover').click(function()
 //Saves user settings
 $('#savebutton').click(function()
     {
-        localStorage.setItem("savedcover", null);
         localStorage.setItem("savedcover", albumselector);
+        var myArray = [];
+        $( ".songbutton" ).each(function( index ) {
+            console.log( index + ": " + $( this ).val() );
+            myArray.push($( this ).val())
+          });
+        var json = JSON.stringify(myArray);
+        console.log("JSON: ", json);
     });
 
 //Accordion menu
@@ -123,6 +137,7 @@ jQuery(document).ready(function(){
 	}
 });
 
+//
 $('.songselection').click(function()
 {
     console.log($(this).attr('id') +" was chosen");

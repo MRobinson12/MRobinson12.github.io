@@ -640,7 +640,8 @@ nav ul li a
 #CustomCD #SongList
         {
                 list-style-type: none;
-                margin-right: 5%;                  
+                margin-right: 5%;    
+                padding-bottom: 8em;                    
         }
 #CustomCD #SongList li
         {
