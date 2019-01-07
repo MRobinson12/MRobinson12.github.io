@@ -1,5 +1,5 @@
 //CD creator variables
-var albumselector;
+var albumselector = 0;
 var song1;
 var song2;
 var song3;
@@ -17,10 +17,14 @@ var slotselection = null;
 window.onload=function()
     {
     albumselector = 0;
+    var savedalbumselector = 0;
     console.log("Ready")
-    savedalbumselector = localStorage.getItem("savedcover");
+    savedalbumselector = localStorage.getItem('savedcover');
     albumselector = savedalbumselector;
     $('#CustomAlbumCover').attr('src',albumcover[savedalbumselector]);
+
+    $('#menu').metisMenu();
+
     };
 
 
@@ -72,7 +76,7 @@ $('#nextcover').click(function()
     }
     else
     {
-        albumselector = albumselector + 1;
+        albumselector++;
         $('#CustomAlbumCover').attr('src',albumcover[albumselector]);
         console.log("Selector is at" + albumselector);
     }
@@ -87,7 +91,7 @@ $('#prevcover').click(function()
     }
     else
     {
-        albumselector = albumselector - 1;
+        albumselector--;
         $('#CustomAlbumCover').attr('src',albumcover[albumselector]);
         console.log("Selector is at" + albumselector);
     }
@@ -100,3 +104,25 @@ $('#savebutton').click(function()
         localStorage.setItem("savedcover", albumselector);
     });
 
+//Accordion menu
+jQuery(document).ready(function(){
+	var accordionsMenu = $('.cd-accordion-menu');
+
+	if( accordionsMenu.length > 0 ) {
+		
+		accordionsMenu.each(function(){
+			var accordion = $(this);
+			//detect change in the input[type="checkbox"] value
+			accordion.on('change', 'input[type="checkbox"]', function(){
+				var checkbox = $(this);
+				console.log(checkbox.prop('checked'));
+				( checkbox.prop('checked') ) ? checkbox.siblings('ul').attr('style', 'display:none;').slideDown(300) : checkbox.siblings('ul').attr('style', 'display:block;').slideUp(300);
+			});
+		});
+	}
+});
+
+$('.songselection').click(function()
+{
+    console.log($(this).attr('id') +" was chosen");
+});
