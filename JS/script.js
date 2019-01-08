@@ -103,7 +103,10 @@ $('#prevcover').click(function()
 $('#savebutton').click(function()
     {
         localStorage.setItem("savedcover", albumselector);
-        localStorage.setItem("saveduser", $('#username').attr("value"));
+        
+        var text_to_save=document.getElementById('#username').value;
+        localStorage.setItem("saveduser", text_to_save);
+        
         localStorage.setItem("savedsong1", $('#song1').attr("value"));
         localStorage.setItem("savedsong2", $('#song2').attr("value"));
         localStorage.setItem("savedsong3", $('#song3').attr("value"));
