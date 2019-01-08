@@ -186,6 +186,10 @@ nav ul li a
                 padding-right: 10%;  
                 padding-bottom: 8em;                  
         }
+#CustomCD #SongList input
+        {
+                width: 20em;                 
+        }
 #CustomCD #SongList li
         {
                 list-style-type: none;                  
@@ -205,7 +209,12 @@ nav ul li a
         {
                 width: 20em;     
         }
-
+#CustomCD #SongList ul li ul li 
+        {
+                padding-top: 0.2em;
+                padding-bottom: 0.2em;
+                padding-left: 1em;
+        }
 /*Album page*/
 #AlbumPage
         {
@@ -637,6 +646,10 @@ nav ul li a
                 align-content: center;
                 width: 65%;
         }
+#CustomCD #SongList input
+        {
+                width: 20em;                 
+        }
 #CustomCD #SongList
         {
                 list-style-type: none;
@@ -661,7 +674,12 @@ nav ul li a
         {
                 width: 65%;     
         }
-
+#CustomCD #SongList ul li ul li 
+        {
+                padding-top: 0.2em;
+                padding-bottom: 0.2em;
+                padding-left: 1em;
+        }
 /*Album page*/
 #AlbumPage
         {

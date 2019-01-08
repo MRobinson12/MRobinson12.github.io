@@ -1,21 +1,13 @@
 //CD creator variables
 var albumselector = 0;
-var song1;
-var song2;
-var song3;
-var song4;
-var song5;
-var song6;
-var song7;
-var song8;
-var song9;
-var song10;     
 var albumcover = ["Assets/album1.jpg", "Assets/album2.jpg", "Assets/album3.jpg", "Assets/album4.jpg", "Assets/album5.jpg", "Assets/album6.jpg", "Assets/album7.jpg", "Assets/album8.jpg"]
 var songstorage =["Humility (feat. George Benson)","Tranz","Hollywood (feat. Snoop Dogg & Jamie Principle)","Kansas","Sorcererz","Idaho","Lake Zurich","Magic City","FireFlies","One Percent","Souk Eyes","Ascension","Strobelite","Saturnz Barz","Momentz","Submission","Charger","Adromeda","Busted and Blue","Carnival","Let Me Out","Sex Murder Party","She's My Collar","Hallelujah Money","We Got the Power","Interlude: New World","The Apprentice","Halfway to the Halfway House","Out of Body","Ticker Tape","Circle of Friendz","Orchestral Intro","Welcome to the World of the Plastic Beach","White Flag","Rhinestone Eyes","Style","Superfast Jellyfish","Empire Ants","Glitter Freeze","Some Kind of Nature","On Melancholy Hill","Broken","Plastic Beach","To Binge","Cloud of Unknowing","Pirate Jet","Phoner To Arizona","Revolving Doors","HillBilly Man","Detroit","Shy-town","Little Pink Plastic Bags","The Joplin Spider","The Parish of Space Dust","The Snake In Dallas","Amarillo","The Speak It Mountains","Aspen Forest","Bobby In Phoenix","California And the Slipping of the Sun","Seattle Yodel","68 State","People","Hongkongaton","We Are Happy Landfill","Hong Kong","Highway (Under Construction)","Rockit","Bill Murray","The Swagga","Murdoc Is God","Spitting Out The Demons","Don't Get Lost In Heaven","Stop The Damns","Intro","Last Living Souls","Kids With Guns","O Green World","Dirty Harry","Feel Good Inc.","El Manana","Every Planet We Reach Is Dead","November Has Come","All Alone","White Light","DARE","Fire Coming Out Of The Monkey's Head","Don't Get Lost In Heaven","Demon Days","Jungle Fresh","Strictly Rubbadub","Banana Baby","Monkey Racket","De-Punked","P45","Dub Ø9","Crooked","Mutant Genius","Come Again","A Fistful of Peanuts","Lil' Dub Chefin'","Re-Hash","5/4","Tomorrow Comes Today","New Genius (Brother)","Clint EastWood","Man Research","Punk","Sound Check","Double Bass","Rock the House","19-2000","Latin Simone","Starshine","Slow Country","M1 A1","Clint EastWood (Ed Case/Sweetie Irie Refix)","19-2000 - Soulchild Remix"]
 var slotselection = null;
-
+var slotcounter = 0;
+var savedselectedsongs = [];
 //onload functions
 window.onload=function()
+
     {
     albumselector = 0;
     var savedalbumselector = 0;
@@ -23,19 +15,20 @@ window.onload=function()
     savedalbumselector = localStorage.getItem('savedcover');
     albumselector = savedalbumselector;
     $('#CustomAlbumCover').attr('src',albumcover[savedalbumselector]);
- 
-    $('#Song1').attr('value',songstorage[localStorage.getItem('song1local')]);
-    $('#Song2').attr('value',songstorage[localStorage.getItem('song2local')]);
-    $('#Song3').attr('value',songstorage[localStorage.getItem('song3local')]);
-    $('#Song4').attr('value',songstorage[localStorage.getItem('song4local')]);
-    $('#Song5').attr('value',songstorage[localStorage.getItem('song5local')]);
-    $('#Song6').attr('value',songstorage[localStorage.getItem('song6local')]);
-    $('#Song7').attr('value',songstorage[localStorage.getItem('song7local')]);
-    $('#Song8').attr('value',songstorage[localStorage.getItem('song8local')]);
-    $('#Song9').attr('value',songstorage[localStorage.getItem('song9local')]);
-    $('#Song10').attr('value',songstorage[localStorage.getItem('song10local')]);
-    };
+    var song1 = localStorage.getItem('savedsong1')
+    $('#song1').attr('value',localStorage.getItem('savedsong1'));
+    $('#song2').attr('value',localStorage.getItem('savedsong2'));
+    $('#song3').attr('value',localStorage.getItem('savedsong3'));
+    $('#song4').attr('value',localStorage.getItem('savedsong4'));
+    $('#song5').attr('value',localStorage.getItem('savedsong5'));
+    $('#song6').attr('value',localStorage.getItem('savedsong6'));
+    $('#song7').attr('value',localStorage.getItem('savedsong7'));
+    $('#song8').attr('value',localStorage.getItem('savedsong8'));
+    $('#song9').attr('value',localStorage.getItem('savedsong9'));
+    $('#song10').attr('value',localStorage.getItem('savedsong10'));
+    $('#username').attr('value',localStorage.getItem('saveduser'));
 
+    }
 
 //Selects the song slot to change
 $('.songbutton').click(function()
@@ -110,13 +103,18 @@ $('#prevcover').click(function()
 $('#savebutton').click(function()
     {
         localStorage.setItem("savedcover", albumselector);
-        var myArray = [];
-        $( ".songbutton" ).each(function( index ) {
-            console.log( index + ": " + $( this ).val() );
-            myArray.push($( this ).val())
-          });
-        var json = JSON.stringify(myArray);
-        console.log("JSON: ", json);
+        localStorage.setItem("saveduser", $('#username').attr("value"));
+        localStorage.setItem("savedsong1", $('#song1').attr("value"));
+        localStorage.setItem("savedsong2", $('#song2').attr("value"));
+        localStorage.setItem("savedsong3", $('#song3').attr("value"));
+        localStorage.setItem("savedsong4", $('#song4').attr("value"));
+        localStorage.setItem("savedsong5", $('#song5').attr("value"));
+        localStorage.setItem("savedsong6", $('#song6').attr("value"));
+        localStorage.setItem("savedsong7", $('#song7').attr("value"));
+        localStorage.setItem("savedsong8", $('#song8').attr("value"));
+        localStorage.setItem("savedsong9", $('#song9').attr("value"));
+        localStorage.setItem("savedsong10", $('#song10').attr("value"));
+
     });
 
 //Accordion menu
