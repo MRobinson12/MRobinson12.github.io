@@ -646,7 +646,7 @@ nav ul li a
                 align-content: center;
                 width: 65%;
         }
-#CustomCD #SongList input
+#CustomCD #SongList ul li input
         {
                 width: 65%em;                 
         }
