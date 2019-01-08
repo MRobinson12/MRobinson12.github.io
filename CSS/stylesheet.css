@@ -648,10 +648,11 @@ nav ul li a
         }
 #CustomCD #SongList ul li input
         {
-                width: 65%em;                 
+                width: 65%;                 
         }
 #CustomCD #SongList
         {
+                align-content: center;
                 list-style-type: none;
                 margin-right: 5%;    
                 padding-bottom: 8em;                    

@@ -26,8 +26,9 @@ window.onload=function()
     $('#song8').attr('value',localStorage.getItem('savedsong8'));
     $('#song9').attr('value',localStorage.getItem('savedsong9'));
     $('#song10').attr('value',localStorage.getItem('savedsong10'));
-    $('#username').attr('value',localStorage.getItem('saveduser'));
-
+    
+    var name = localStorage.getItem("name");
+    $("#username").val(name);
     }
 
 //Selects the song slot to change
@@ -104,8 +105,8 @@ $('#savebutton').click(function()
     {
         localStorage.setItem("savedcover", albumselector);
         
-        var text_to_save=document.getElementById('#username').value;
-        localStorage.setItem("saveduser", text_to_save);
+        var name = $("#username").val();
+        localStorage.setItem("name", name);
         
         localStorage.setItem("savedsong1", $('#song1').attr("value"));
         localStorage.setItem("savedsong2", $('#song2').attr("value"));
