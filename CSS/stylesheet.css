@@ -337,7 +337,7 @@ Footer ul li
         }       
 
 
-/* MENU CSS */
+/*Imported CSS for Accordion menu*/    
 
 .cd-accordion-menu {
         width: 20em;
@@ -797,6 +797,8 @@ Footer ul li
         }       
     }    
 
+
+/*Imported CSS for Accordion menu*/    
     .cd-accordion-menu {
         width: 20em;
         background: #4d5158;
