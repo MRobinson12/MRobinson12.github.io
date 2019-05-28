@@ -1,0 +1,85 @@
+/*Markup for Desktop Devices*/
+@media only screen and (min-width: 600px)
+{
+    body
+    {
+        margin: 0;
+    }
+    nav
+    {
+        background: #248232;
+        list-style-type: none;
+        display: block;
+        padding: 0.5em;
+        padding-left: 0em;
+        width: 100%;
+        border-style: solid;
+        border-width: 0.05em;
+        border-color: #000000;
+    }
+    nav ul li
+    {
+        display: inline;
+        padding: 1em;
+        
+    }
+    nav ul li a
+    {
+        color: #FCFFFC
+    }
+
+    #headerimage
+    {
+        padding-bottom: 0;
+        display: grid;
+    }
+    #headerimage img 
+    {
+        width: 100%;
+        border-style: solid;
+        border-width: 0.05em;
+        border-color: #000000;
+    }
+
+    .text
+    {
+        background: #2BA84A;
+        display: block;
+        margin-top: 0;
+    }
+    .text h1
+    {
+        color: #040F0F;
+        margin-top: 0;
+    }
+}
+
+/*Markup for Mobile Devices*/
+@media screen and (max-width: 600px)
+{
+    #navbar
+    {
+        background: #2BA84A
+    }
+    #navbar ul
+    {
+        
+        list-style-type: none;
+    }
+    #navbar ul li
+    {
+        display: inline;
+        padding: 1em;
+    }
+    #navbar ul li a
+    {
+        color: #040F0F
+    }
+}
+
+/* Colour Palette
+Black #040F0F
+Dark Green #248232
+Light Green #2BA84A
+Gunmetal 2D3A3A
+White #FCFFFC
