@@ -1,15 +1,17 @@
 /*Markup for Desktop Devices*/
 @media only screen and (min-width: 600px)
 {
-    /*MAIN STUFF*/
+    /*MAIN BODY*/
     body
     {
         margin: 0;
         padding: 0;
     }
+
+    /*NAV BAR*/
     nav
     {
-        background: #82735C;
+        background: #270F14;
         list-style-type: none;
         display: block;
         width: 100%;
@@ -30,19 +32,12 @@
     }
     nav ul li a
     {
-        color: #FCFFFC;
-        font-family: 'Arial Black';
+        color: #FFA630;
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 1.5em;
         text-decoration: none;
     }
-    nav h1
-    {
-        color: #FCFFFC;
-        font-family: 'Arial Black';
-        text-decoration: none;
-        font-size: 1em;
-        padding: 0;
-        text-align: center;
-    }
+
 
 
 
@@ -68,7 +63,7 @@
     /*Intro text Formatting*/
     .text
     {
-        background: #9DB17C;
+        background: #77A7BA;
         display: block;
         padding-top: 2em;
         padding-bottom: 2em;
@@ -76,9 +71,9 @@
     }
     .text h1
     {
-        color: #040F0F;
+        color: #312F2F;
         margin-top: 0;
-        font-family: 'Lucida Sans';
+        font-family: 'Raleway', sans-serif;
         text-decoration: underline;
         font-size: 2em;
         margin-left: 2.5%;
@@ -86,9 +81,9 @@
     }
     .text h2
     {
-        color: #040F0F;
+        color: #312F2F;
         margin-top: 0;
-        font-family: 'Lucida Sans';
+        font-family: 'Raleway', sans-serif;
         font-size: 1em;
         margin-left: 2.5%;
         margin-right: 2.5%;
@@ -102,23 +97,30 @@
         display: block;
         width: 100%;
     }
-    .showcaselr nav
+    .showcaselr .showcasetextlr
     {
         float: left;
         width: 30%;
         height: 24em;
-        background-color: #3C896D;
+        background-color: #696D7D;
         
     }
-    .showcaselr nav h1
+    .showcasetextlr a
     {
-        color: #040F0F;
+        color: #312F2F;
         margin-top: 0;
-        font-family: 'Lucida Sans';
-        font-size: 2em;
-        padding-top: 6em;
+        font-family: 'Raleway', sans-serif;
+        font-size: 2.5em;
+        padding-top: 4.5em;
         text-align: center;        
         text-transform: bold;
+        text-shadow: 2px 2px 5px white;
+        text-decoration: none;
+    }
+    .showcaselr nav a h1
+    {
+        margin: 0%;
+        padding-top: 3.5em;
     }
     .showcaselr article
     {
@@ -132,6 +134,91 @@
         width: 100%;
     }
 
+    /*Highlighted showcase formatting*/
+
+    /*LR*/
+    .showcaselr .lrhighlighted
+    {
+        float: left;
+        width: 30%;
+        height: 24em;
+        background-color: #856A5D;
+
+        /* For Safari 3.1 to 6.0 */
+        -webkit-transition-property: color;
+        -webkit-transition-duration: 0.3s;
+        -webkit-transition-timing-function: linear;
+        /* Standard syntax */
+        transition-property: color;
+        transition-duration: 0.3s;
+        transition-timing-function: linear;
+        
+    }
+    .lrhighlighted a
+    {
+        color: #CFFFFD;
+        margin-top: 0;
+        font-family: 'Raleway', sans-serif;
+        font-size: 2.5em;
+        padding-top: 4.5em;
+        text-align: center;        
+        text-transform: bold;
+        text-shadow: 2px 2px 5px black;
+        text-decoration: none;
+
+        /* For Safari 3.1 to 6.0 */
+        -webkit-transition-property: color;
+        -webkit-transition-duration: 0.3s;
+        -webkit-transition-timing-function: linear;
+        /* Standard syntax */
+        transition-property: color;
+        transition-duration: 0.3s;
+        transition-timing-function: linear;
+    }
+
+    /*RL*/
+
+    .showcaserl .rlhighlighted
+    {
+        float: left;
+        width: 30%;
+        height: 24em;
+        background-color: #856A5D;
+        
+
+        /* For Safari 3.1 to 6.0 */
+        -webkit-transition-property: color;
+        -webkit-transition-duration: 0.3s;
+        -webkit-transition-timing-function: linear;
+        /* Standard syntax */
+        transition-property: color;
+        transition-duration: 0.3s;
+        transition-timing-function: linear;
+        
+    }
+    .showcaserl .rlhighlighted a
+    {
+        color: #CFFFFD;
+        margin-top: 0;
+        font-family: 'Raleway', sans-serif;
+        font-size: 2.5em;
+        padding-top: 4.5em;
+        text-align: center;        
+        text-transform: bold;
+        text-shadow: 2px 2px 5px black;
+        text-decoration: none;
+
+        /* For Safari 3.1 to 6.0 */
+        -webkit-transition-property: color;
+        -webkit-transition-duration: 0.3s;
+        -webkit-transition-timing-function: linear;
+        
+        /* Standard syntax */
+        transition-property: color;
+        transition-duration: 0.3s;
+        transition-timing-function: linear;
+    }
+    
 
     
     /*Right to Left Showcase formatting*/
@@ -145,18 +232,24 @@
         float: right;
         width: 30%;
         height: 24em;
-        background-color: #3C896D;
+        background-color: #696D7D;
         
     }
-    .showcaserl nav h1
+    .showcaserl nav a 
     {
-        color: #040F0F;
+        color: #312F2F;
         margin-top: 0;
-        font-family: 'Lucida Sans';
-        font-size: 2em;
-        padding-top: 6em;
+        font-family: 'Raleway', sans-serif;
+        font-size: 2.5em;
         text-align: center;        
         text-transform: bold;
+        text-shadow: 2px 2px 5px white;
+        text-decoration: none;
+    }
+    .showcaserl nav a h1
+    {
+        margin: 0%;
+        padding-top: 3.5em;
     }
     .showcaserl article
     {
@@ -169,6 +262,8 @@
         height: 25em;
         width: 100%;
     }
+
+    
 }
 
 /*Markup for Mobile Devices*/
@@ -195,8 +290,12 @@
 }
 
 /* Colour Palette
-Black #040F0F
-Dark Green #248232
-Light Green #2BA84A
-Gunmetal 2D3A3A
-White #FCFFFC
+Top Navbar: #270F14
+Standard Background: #77A7BA
+Highlighted Background: #696D7D
+
+JS Highlighted Background: #856A5D
+JS Highlighted Text: #CFFFFD
+
+Text 1: #312F2F
+Text 2: #FFA630

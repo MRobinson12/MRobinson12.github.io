@@ -6,7 +6,8 @@
     <title>Homepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="CSS/main.css" />
-    <script src="JS/script.js"></script>
+    <!--Google fonts Link-->
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Raleway&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -27,11 +28,12 @@
     <section class="text">
         <h1>Welcome to my Website!</h1>
         <h2>I am a Computer Science student at the University of Lincoln, who spends most of his time online doing various activities. This website is a project that I will be working on in my free time, but feel free to take a look around! This site will feature some things I am proud to share but mostly will be a testing ground for me to practise and learn some new skills using HTML</h2>
+        <h2>All of the images on this site belong to myself, with the occasional photo "Borrowed" from my brother (See about for a link to his instagram) and the site itself has been built up from scratch - with visual advice given from friends and family</h2>
     </section>
 
-    <section class="showcaselr" id="galleryshowcase">
-        <nav>
-            <h1>Gallery</h1>
+    <section class="showcaselr">
+        <nav class="showcasetextlr">
+                <a href="gallery.html"><h1>Gallery</h1></a>
         </nav>
         <article>
             <img src="Assets/showcase1.jpg" alt="Dog">
@@ -42,14 +44,14 @@
         <article>
             <img src="Assets/projectshowcase.jpg" alt="Code">
         </article>
-        <nav>
-            <h1>Previous Work</h1>
+        <nav class="showcasetextrl">
+            <a href="work.html"><h1>Previous Work</h1></a>
         </nav>
     </section>
 
     <section class="showcaselr">
-        <nav>
-            <h1>About & Contact me</h1>
+        <nav class="showcasetextlr">
+            <a href="about.html"><h1>About & Contact me</h1></a>
         </nav>
         <article>
             <img src="Assets/aboutshowcase.jpg" alt="Contact">
@@ -60,5 +62,8 @@
         <h1>⠀ </h1>
     </nav>
 
+    <!--JavaScripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="JS/script.js"></script>
 </body>
 </html>
