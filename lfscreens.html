@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<style>
+  body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(LincsFurs/FlagLogo.png);
+    background-size: 100% 100%;
+  }
+  p {
+    font-family: "Comic Sans MS";
+    text-align: center;
+    align-self: center;
+    display: block;
+    color: purple;
+    font-size: 700%;
+    text-shadow: 2px 2px black;
+  }
+</style>
+
+<html>
+  <head>
+  </head>
+  <body>
+
+    <script>
+      window.onload = function () {
+      // Array of Images
+      var backgroundImg=[/* Schedule of the Day */
+                        "LincsFurs/Schedule.png"
+                        /* Walk Soon Warning - Check Time*/ 
+
+                        /* LincsFurs Logo */
+                        ,"LincsFurs/FlagLogo.png"
+                        /* Dates and Info of Next Meet */ 
+
+                        /* Ko-Fi */ 
+
+                        /* Featured Photos (3) From Last Meet */
+                        ]
+      setInterval(changeImage, 5000);
+        function changeImage() {   
+          var i = Math.floor((Math.random() * 2 /* Set to array Number! */ ));
+          document.body.style.backgroundImage = "url('"+backgroundImg[i]+"')";
+          }
+      }
+    </script>
+  </body>
+</html>
