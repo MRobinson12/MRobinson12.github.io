@@ -23,15 +23,15 @@
   <body>
 
     <script>
-      let i = 0
+      let i = 0 
+      let p = 5 /* Image Count */
       window.onload = function () {
       // Array of Images
       var backgroundImg=[/* Schedule of the Day */
-                        "LincsFurs/Schedule.png"
-                        /* Walk Soon Warning - Check Time*/ 
+                        "LincsFurs/schedule.png"
 
                         /* LincsFurs Logo */
-                        ,"LincsFurs/FlagLogo.png"
+                        ,"LincsFurs/flaglogo.png"
 
                         /* Dates and Info of Next Meet */ 
 
@@ -41,15 +41,33 @@
                         ,"LincsFurs/photo3.jpg"
 
                         /* QR Codes - Socials - Link Tree - Featured Peeps Details */
-                        
+
+                        /* Walk Soon Warning - Check Time*/ 
+                        ,"LincsFurs/walkreminder.jpg"
                         ]
-      setInterval(changeImage, 5000);
+                        
+      setInterval(changeImage, 1000);
         function changeImage() {   
-          i = Math.floor((i + 1) % 5 /* Set to array Number! */);
+          walkreminder()
+          i = Math.floor((i + 1) % p /* Set to array Number! */);
           console.log(i);
           document.body.style.backgroundImage = "url('"+backgroundImg[i]+"')";
           }
+
+        function walkreminder()
+        {
+          const now = new Date();
+          const hour = now.getHours();
+          const minute = now.getMinutes();
+
+          if (hour === 14 && minute >= 5 && minute <= 30) {
+            p = 6
+          } else {
+            p = 5
+          }
+        }
       }
+        
     </script>
   </body>
 </html>
