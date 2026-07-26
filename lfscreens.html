@@ -23,6 +23,7 @@
   <body>
 
     <script>
+      let i = 0
       window.onload = function () {
       // Array of Images
       var backgroundImg=[/* Schedule of the Day */
@@ -34,7 +35,7 @@
 
                         /* Dates and Info of Next Meet */ 
 
-                        /* Featured Suiter */
+                        /* Featured Suiter (3) */
                         ,"LincsFurs/photo1.jpg"
                         ,"LincsFurs/photo2.jpg"
                         ,"LincsFurs/photo3.jpg"
@@ -44,7 +45,8 @@
                         ]
       setInterval(changeImage, 5000);
         function changeImage() {   
-          var i = Math.floor((Math.random() * 5 /* Set to array Number! */ ));
+          i = Math.floor((i + 1) % 5 /* Set to array Number! */);
+          console.log(i);
           document.body.style.backgroundImage = "url('"+backgroundImg[i]+"')";
           }
       }
