@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-image: url(LincsFurs/FlagLogo.png);
-    background-size: 100% 100%;
+    background-size: cover;
   }
   p {
     font-family: "Comic Sans MS";
@@ -31,15 +31,20 @@
 
                         /* LincsFurs Logo */
                         ,"LincsFurs/FlagLogo.png"
+
                         /* Dates and Info of Next Meet */ 
 
-                        /* Ko-Fi */ 
+                        /* Featured Suiter */
+                        ,"LincsFurs/photo1.jpg"
+                        ,"LincsFurs/photo2.jpg"
+                        ,"LincsFurs/photo3.jpg"
 
-                        /* Featured Photos (3) From Last Meet */
+                        /* QR Codes - Socials - Link Tree - Featured Peeps Details */
+                        
                         ]
       setInterval(changeImage, 5000);
         function changeImage() {   
-          var i = Math.floor((Math.random() * 2 /* Set to array Number! */ ));
+          var i = Math.floor((Math.random() * 5 /* Set to array Number! */ ));
           document.body.style.backgroundImage = "url('"+backgroundImg[i]+"')";
           }
       }
